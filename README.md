@@ -1,6 +1,6 @@
 # Go Low-Level Fundamentals: Memory, Data Structures &amp; Algorithms
 
-A comprehensive, study-friendly reorganization of meeting notes. All original content preserved. Enhanced with **senior-level insights**, text diagrams, tables, complete runnable examples, key takeaways, pitfalls, and mastery additions (e.g., Gauss story for O(1), Go tooling, packages, multi-main setups).
+A comprehensive, study-friendly reorganization of meeting notes.
 
 ## Table of Contents
 1. [How Computers Store Data: Bytes &amp; Bits](#how-computers-store-data-bytes--bits)
