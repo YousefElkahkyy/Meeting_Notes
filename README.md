@@ -15,9 +15,12 @@ A comprehensive, study-friendly reorganization of meeting notes.
 
 ## How Computers Store Data: Bytes & Bits
 
-**Original Bytes & Bits Full Verbatim Content**:
-// The smallest addressable unit of memory is a byte, which consists of 8 bits. Each bit can be either a 0 or 1, allowing for 256 possible combinations (2^8). This means that a byte can represent a wide range of data, including characters, numbers, and other types of information.
-// int8, int16, int 32, int64: These are signed integer types that can store whole numbers. The number after "int" indicates the number of bits used to represent the integer. For example, int8 can store values from -128 to 127, while int64 can store values from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+**Bytes & Bits - Arranged Key Points (Easy Study)**:
+- **Byte**: Smallest addressable memory unit = 8 bits.
+- **Bits**: 0 or 1, byte combos = 256 (2^8).
+- **Byte represents**: Characters, numbers, data.
+- **Signed ints (int8 to int64)**: Bits determine range, e.g., int8: -128 to 127.
+- **Unsigned (uint8 to uint64)**: 0 to max, e.g., uint8: 0-255.
 | Type    | Signed? | Bits | Range (Signed Exact)                                   | Range (Unsigned Exact)                                  |
 |---------|---------|------|-------------------------------------------------------|---------------------------------------------------------|
 | int8   | Yes    | 8    | -128 to 127                                           | uint8: 0 to 255                                         |
@@ -25,7 +28,7 @@ A comprehensive, study-friendly reorganization of meeting notes.
 | int32  | Yes    | 32   | -2,147,483,648 to 2,147,483,647                       | uint32: 0 to 4,294,967,295                              |
 | int64  | Yes    | 64   | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | uint64: 0 to 18,446,744,073,709,551,615                 |
 | int    | Arch   | 32/64| Arch-dependent (64-bit = int64)                        | uint arch                                               |
-// uint8, uint16, uint32, uint64: These are unsigned integer types that can store whole numbers without a sign. The number after "uint" indicates the number of bits used to represent the integer. For example, uint8 can store values from 0 to 255, while uint64 can store values from 0 to 18,446,744,073,709,551,615.
+- **Unsigned uints**: No sign, bits set range, e.g., uint64: 0 to 18,446,744,073,709,551,615.
 
 **Original Examples Verbatim (Runnable)**:
 ```go
@@ -45,8 +48,11 @@ var c int = 7
 fmt.Println(unsafe.Sizeof(c)) // Output: 8 (the size of an int variable is typically 8 bytes on a 64-bit system) (00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000111)
 ```
 
-**Original unsafe Explanation Verbatim**:
-// the unsafe package in Go provides low-level programming facilities that allow you to perform operations that are not type-safe. It is often used for tasks such as memory manipulation, pointer arithmetic, and interfacing with C code. The unsafe package provides functions and types that allow you to work with raw memory and pointers, but it should be used with caution, as it can lead to undefined behavior if not used correctly. In this code snippet, we are using the unsafe.Sizeof function to determine the size of an array in bytes, which is a common use case for the unsafe package when working with low-level memory operations.
+**unsafe Package - Arranged Key Points (Easy Study)**:
+- **Purpose**: Low-level ops: memory manip, ptr arith, C interop.
+- **Risk**: Not type-safe, undefined behavior if wrong.
+- **Common use**: unsafe.Sizeof for size in bytes (e.g., arrays).
+- **Caution**: Use carefully!
 
 **Expanded Senior Mastery (More Details)**:
 - **Two's Complement Full Math**: For int8 127 (0x7F) +1 = 0x80 = -128. Formula: ~v +1 for neg. Go uses IEEE 754 for float but int standard two's.
@@ -100,8 +106,10 @@ fmt.Println(unsafe.Sizeof(c)) // Output: 8 (the size of an int variable is typic
 
 ## Variables & Pointers
 
-**Original Variables Full Verbatim Content**:
-// variables are used to store data in a program. They have a name, a type, and a value. The type of a variable determines the kind of data it can hold and how much memory it will use. For example, an int variable will use 4 bytes of memory on a 32-bit system, while an int64 variable will use 8 bytes of memory on a 64-bit system.
+**Variables - Arranged Key Points (Easy Study)**:
+- **Definition**: Store data with name, type, value.
+- **Type role**: Determines data kind & memory (int: 4B 32bit, int64: 8B 64bit).
+- **Container**: Holds value for manipulation in program.
 // it act like a container that holds a value and allows us to manipulate that value throughout our program. We can assign a value to a variable, change its value, and use it in various operations. Variables are essential for storing and managing data in any programming language, including Go.
 // it is a hexadecimal representation of the memory address where the variable is stored. The & operator is used to get the memory address of a variable, and the * operator is used to dereference a pointer, which means accessing the value stored at that memory address.
 
