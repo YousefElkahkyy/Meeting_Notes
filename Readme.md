@@ -1237,27 +1237,6 @@ go tool objdump -s main.main ./binary  # view assembly
 
 ---
 
-### 🏋️ Practice Problems (Ordered by Difficulty)
-
-**Beginner:**
-- [ ] Write a function that counts how many times each character appears in a string using a map
-- [ ] Implement `reverseSlice` in-place without allocating a new slice
-- [ ] Demonstrate variable shadowing with a test that catches the bug
-
-**Intermediate:**
-- [ ] Implement a singly linked list with pointer-based nodes
-- [ ] Write a safe `pop` function for slices that panics gracefully with a message
-- [ ] Parse a log file using `os.ReadFile` and group lines by severity using a map
-
-**Advanced:**
-- [ ] Benchmark append reallocation: pre-allocated vs dynamic — measure ns/op
-- [ ] Implement a concurrent word counter using `sync.Map`
-- [ ] Write a generic `Filter[T any]` function using Go generics
-- [ ] Implement Floyd's cycle detection on a pointer-based linked list
-- [ ] Build a custom binary serializer using `encoding/binary` and `unsafe.Sizeof`
-
----
-
 ### 📖 Further Reading
 
 | Resource | What it covers |
@@ -1269,6 +1248,4 @@ go tool objdump -s main.main ./binary  # view assembly
 | [Go Blog: Laws of Reflection](https://go.dev/blog/laws-of-reflection) | Types at runtime |
 | [Effective Go](https://go.dev/doc/effective_go) | Idiomatic patterns |
 
----
 
-*Study tip: Re-read one section per day, run every example, and do one practice problem. You'll have mastered this material in under two weeks.*
